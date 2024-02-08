@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>İşaret dili Analizi</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #202020;
+                color: #fff;
+                height: 100vh;
+                gap: 5vw;
+            }
+            h2, img{
+                display: grid;
+                place-items: center;
+                position: relative;
+                background-color: #333;
+            }
+            .img{
+                width: 600px;
+                height: 600px;
+                border-radius: 12px;
+                background-color: #fff;
+                border: .8rem solid rgb(14, 36, 85);
+            }
+            h2{
+                font-size: 30px;
+                padding: 20px;
+                border-radius: .8rem;
+                border: .5rem solid rgb(14, 36, 85);
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Konuşmacı</h2><br>
+        <img class="img" alt="İşaret dili Analizi"  src="{{ url_for('video_feed') }}">
+    </body>
+</html>
